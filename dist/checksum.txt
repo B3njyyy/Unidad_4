@@ -1,0 +1,3 @@
+SHA256 hash de actividad.exe:
+cd163d00deabb7949349e29220443a3ef184792d055a92cb52e6af2064756799
+CertUtil: -hashfile comando completado correctamente.
