@@ -1,0 +1,37 @@
+name: Construir Ejecutable Windows
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  construir:
+    runs-on: windows-latest
+
+    steps:
+    - name: Revisar repositorio
+      uses: actions/checkout@v4
+
+    - name: Instalar Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Instalar dependencias
+      run: pip install pyinstaller
+
+    - name: Construir exe
+      run: pyinstaller --onefile actividad.py --name actividad
+
+    - name: Generar checksum SHA256
+      run: certutil -hashfile dist\actividad.exe SHA256 > checksum.txt
+
+    - name: Subir al release
+      uses: softprops/action-gh-release@v2
+      with:
+        files: |
+          dist/actividad.exe
+          checksum.txt
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

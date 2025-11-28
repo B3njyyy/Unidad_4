@@ -34,3 +34,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    input("\nPresiona Enter para salir...") # Se agrega esta linea para que el .exe no se cierre
