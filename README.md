@@ -9,6 +9,7 @@
 1. Abre CMD o PowerShell.
 2. Ve a la carpeta donde está el `.exe`.
 3. Ejecuta: actividad.exe mi_archivo
+4. Se mostrará el hash SHA-256 del archivo.
 
 Ejemplo:
 
@@ -18,10 +19,9 @@ SHA-256: f0e8073d6ab7811db84852945a16925a2254c47d4ff9fb9972a4d04503221704
 
 Presiona Enter para salir...
 
-4. Se mostrará el hash SHA-256 del archivo.
 
 ## 3.- Desinstalación
-- Basta con eliminar el actividad.exe.
+- Solo hay que eliminar el archivo actividad.exe.
 
 ## 4.- Troubleshooting / Problemas comunes
 - "Archivo no encontrado" → revisar que la ruta y el nombre del archivo sean correctos.
