@@ -90,7 +90,7 @@
  [],
  False,
  False,
- 1764336212,
+ 1764380871,
  [('run.exe',
    'C:\\Users\\omarl\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
    'EXECUTABLE')],
