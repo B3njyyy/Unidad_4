@@ -13,6 +13,7 @@
 Ejemplo:
 
 actividad.exe archivo_prueba.txt
+
 SHA-256: f0e8073d6ab7811db84852945a16925a2254c47d4ff9fb9972a4d04503221704
 
 Presiona Enter para salir...
