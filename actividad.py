@@ -34,4 +34,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-    input("\nPresiona Enter para salir...") # Se agrega esta linea para que el .exe no se cierre
+    if os.environ.get("GITHUB_ACTIONS") != "true":    #Se agregó esto para realizar las pruebas en github
+        input("\nPresiona Enter para salir...") # Se agrega esta linea para que el .exe no se cierre
