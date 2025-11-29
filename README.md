@@ -1,4 +1,4 @@
-# aplicacion versión 1.0.0
+# Aplicacion versión 1.0.0
 
 ## 1.- Instalación
 1. Descarga `aplicacion.exe` desde el Release en GitHub.
