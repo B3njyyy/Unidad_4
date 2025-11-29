@@ -1,0 +1,26 @@
+name: Test
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Crear carpeta de pruebas
+        run: mkdir tests
+
+      - name: Crear archivo de prueba
+        run: echo "Este es un texto de prueba, para la actividad 4. Prueba automática" > tests/archivo_prueba.txt
+
+      - name: Ejecutar actividad.exe en carpeta dist
+        run: ../dist/actividad.exe tests/archivo_prueba.txt > tests/salida.txt
+
+      - name: Verificar salida
+        run: |
+          if (!(Test-Path "tests/salida.txt")) { exit 1 }
+          if ((Get-Content tests/salida.txt).Length -eq 0) { exit 1 }
+          echo "Prueba OK"
