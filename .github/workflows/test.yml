@@ -1,4 +1,4 @@
-name: Prueba automática
+name: Prueba
 
 on: [push, pull_request]
 
